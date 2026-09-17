@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marketing Performance Report — 9313 Luminary Blvd | Verandah Properties</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#008C82;--teal-deep:#00625B;--gold:#C9A227;--charcoal:#1A1A1A;
+--body:#1F1F1F;--muted:#5A5651;--strong:#0F0F0F;--line:#E2DED7;--paper:#FBFAF7;--panel:#F3F1EC;
+--warn:#C0705A;--green:#4E8C6A}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--body);font-family:'Jost',system-ui,sans-serif;
+font-weight:400;font-size:16.5px;line-height:1.68}
+.wrap{max-width:900px;margin:0 auto;padding:0 26px}
+h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;color:var(--charcoal)}
+h1{font-size:2.5rem;line-height:1.1;margin:0 0 .4rem}
+h2{font-size:1.8rem;line-height:1.2;margin:0 0 .8rem}
+h3{font-size:1.18rem;margin:1.4rem 0 .45rem}
+p{margin:0 0 1rem;max-width:74ch}
+b,strong{font-weight:600;color:var(--strong)}
+ul{margin:0 0 1rem;padding-left:1.2rem;max-width:74ch}
+li{margin-bottom:.5rem}
+
+.mast{background:var(--charcoal);color:#F5F3EE;padding:28px 0 30px}
+.brandline{display:flex;align-items:baseline;gap:13px;flex-wrap:wrap}
+.mark{width:33px;height:33px;border-radius:50%;background:var(--teal);color:#fff;
+font-family:'Cormorant Garamond',serif;font-size:21px;display:inline-flex;
+align-items:center;justify-content:center;flex:0 0 auto;transform:translateY(5px)}
+.brandname{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:#F5F3EE}
+.mast .tag{color:#A9A49C;font-size:.83rem;margin-left:auto;text-align:right;line-height:1.5}
+.kicker{color:var(--gold);font-size:.9rem;margin:22px 0 4px}
+.mast h1{color:#FBFAF7;margin-top:4px}
+.mast .sub{color:#B8B2A8;margin:0;font-size:1rem}
+
+.rec{background:var(--teal);color:#fff;padding:32px 0 30px}
+.rec h2{color:#fff;font-size:1.5rem;margin-bottom:.3rem}
+.rec p{color:#D6EDEA;max-width:72ch}
+.rec b{color:#fff}
+.rec .big{background:rgba(255,255,255,.12);border-left:4px solid var(--gold);
+border-radius:0 9px 9px 0;padding:22px 26px;margin:18px 0;
+font-family:'Cormorant Garamond',Georgia,serif;font-size:1.8rem;line-height:1.3;color:#fff;max-width:none}
+
+section{padding:38px 0;border-top:1px solid var(--line)}
+.snum{color:var(--teal-deep);font-size:.9rem;margin:0 0 .2rem}
+h2 em{font-style:italic;font-weight:400;color:var(--teal-deep)}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;
+background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:0 0 20px}
+.st{background:#fff;padding:18px}
+.st .v{font-family:'Cormorant Garamond',serif;font-size:2rem;line-height:1.05;color:var(--teal-deep)}
+.st .v.good{color:var(--green)}
+.st .v.warn{color:var(--warn)}
+.st .k{font-size:.85rem;color:var(--muted);margin-top:5px;line-height:1.45}
+.statnote{font-size:.87rem;color:var(--muted);margin:-8px 0 20px}
+
+.pull{border-left:4px solid var(--gold);background:#fff;padding:19px 24px;
+border-radius:0 8px 8px 0;margin:0 0 20px}
+.pull p:last-child{margin-bottom:0}
+.box{background:#fff;border:1px solid var(--line);border-radius:10px;padding:21px 24px;margin:0 0 20px}
+.box h3{margin-top:0}
+.box p:last-child,.box ul:last-child{margin-bottom:0}
+
+details{border:1px solid var(--line);border-radius:9px;background:#fff;margin:0 0 14px}
+summary{cursor:pointer;padding:15px 19px;font-weight:600;color:var(--teal-deep);
+list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.45rem;color:var(--gold);line-height:1;flex:0 0 auto}
+details[open] summary::after{content:"\2212"}
+summary:hover{background:var(--panel)}
+.dbody{padding:2px 19px 17px}
+.dbody > *:last-child{margin-bottom:0}
+
+.tscroll{overflow-x:auto;margin:0 0 14px}
+table{border-collapse:collapse;width:100%;font-size:.9rem;background:#fff;min-width:520px}
+th{background:var(--panel);color:var(--strong);font-weight:600;text-align:left;
+padding:10px 12px;border-bottom:2px solid var(--line);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr.hi td{background:#E6F3F1;font-weight:600}
+td.num,th.num{text-align:right;white-space:nowrap}
+caption{caption-side:bottom;text-align:left;color:var(--muted);font-size:.86rem;padding-top:9px}
+
+.portals{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 16px}
+.portal{background:#fff;border:1px solid var(--line);border-radius:20px;padding:7px 15px;font-size:.89rem}
+.portal::before{content:"✓ ";color:var(--teal)}
+
+footer{background:var(--charcoal);color:#B8B2A8;padding:30px 0;font-size:.89rem}
+footer .sig{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold);margin-bottom:8px}
+footer a{color:#8FD2CB}
+
+@media(max-width:720px){
+body{font-size:16px}h1{font-size:1.95rem}h2{font-size:1.45rem}
+.mast .tag{margin-left:0;width:100%;text-align:left}
+.rec .big{font-size:1.4rem}
+}
+@media print{body{background:#fff}section{page-break-inside:avoid}summary::after{content:""}}
+</style>
+</head>
+<body>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="brandline">
+      <span class="mark">V</span>
+      <span class="brandname">Verandah Properties, LLC</span>
+      <span class="tag">Report 2 of an ongoing series<br>Issued September 17, 2026</span>
+    </div>
+    <p class="kicker">Marketing Performance Report · Week Two</p>
+    <h1>9313 Luminary Boulevard</h1>
+    <p class="sub">Orlando, FL 32827 · Alora at Laureate Park, Lake Nona · 3 bed / 3.5 bath · 2,037 sq ft · MLS O6437426</p>
+  </div>
+</header>
+
+<div class="rec">
+  <div class="wrap">
+    <h2>Where we stand</h2>
+    <p>You approved the reduction to $2,995 and we put it live. This report covers what happened next.</p>
+    <div class="big">The price is doing its job. We are not asking you to make a decision this week.</div>
+    <p>Fourteen days at $3,150 produced one inquiry and no showings. The first days at $2,995 have produced a <b>Realtor inquiry and two scheduled showings</b>. That is the response we were looking for, and our recommendation is to hold the price and let it work.</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section style="border-top:none">
+  <p class="snum">Section One</p>
+  <h2>What changed this week</h2>
+  <div class="stats">
+    <div class="st"><div class="v">$2,995</div><div class="k">Current asking rent</div></div>
+    <div class="st"><div class="v">17</div><div class="k">Days marketed to date</div></div>
+    <div class="st"><div class="v good">2</div><div class="k">Showings scheduled — Sept 17 and Sept 19</div></div>
+    <div class="st"><div class="v good">1</div><div class="k">Realtor inquiry since the reduction</div></div>
+  </div>
+  <p class="statnote">Listed August 31, 2026. Price reduced to $2,995 earlier this week following your approval.</p>
+
+  <p>Report 1 made a specific argument: that one inquiry in eleven days was not a photography or presentation problem, but a price-band problem — that at $3,150 the home was excluded entirely from every search capped at $3,000, so renters never saw it at all.</p>
+  <p>That was a theory. This week it was tested.</p>
+
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Period</th><th class="num">Days</th><th class="num">Inquiries</th><th class="num">Showings</th></tr></thead>
+    <tbody>
+      <tr><td>At $3,150 <span style="color:var(--muted)">(Aug 31 – mid-Sept)</span></td><td class="num">14</td><td class="num">1</td><td class="num">0</td></tr>
+      <tr class="hi"><td>At $2,995 <span style="color:#00625B">(since the reduction)</span></td><td class="num">3</td><td class="num">1</td><td class="num">2 scheduled</td></tr>
+    </tbody>
+    <caption>Two weeks at the higher price produced no showings at all. Three days at the new price produced two.</caption>
+  </table>
+  </div>
+
+  <div class="pull">
+    <p>The listing did not change. The photographs did not change. The home did not change. Only the number did — and the response changed immediately.</p>
+    <p>That is about as clean a confirmation as this kind of test produces.</p>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Section Two</p>
+  <h2>The Realtor inquiry is worth noting <em>separately</em></h2>
+  <p>One of the two showings came from a licensed agent working with a renter. That matters for a reason that isn't obvious.</p>
+  <p>Agents pre-screen. They have already had the budget conversation with their client, already narrowed the search, and do not spend time touring homes their renter cannot afford or will not want. When an agent books a showing, the prospect has usually been qualified before they ever reach the door.</p>
+  <p>It is also a signal about the listing itself. Your home is on the MLS, and agents searching that system are filtering the same way renters do. An agent finding it now, and not in the first two weeks, is consistent with everything above.</p>
+</section>
+
+<section>
+  <p class="snum">Section Three</p>
+  <h2>What we are doing next</h2>
+  <ul>
+    <li><b>Following up with both interested parties</b> directly after their showings — same-day where possible. This is where a good showing turns into an application, and it is the step most often skipped.</li>
+    <li>Debriefing the Realtor specifically. Agents will tell us candidly what their client thought, including objections a renter would never say to a listing agent's face. That feedback is worth more than any other we get.</li>
+    <li>Re-contacting the earlier inquiry from the first two weeks. That prospect passed at $3,150 and now has a concrete reason to look again.</li>
+    <li>Continuing to monitor 9305 Luminary Boulevard for any price movement so we respond before we are undercut rather than after.</li>
+    <li>Re-verifying the listing on every portal, logged out, as part of the weekly cycle.</li>
+  </ul>
+
+</section>
+
+<section>
+  <p class="snum">Section Four</p>
+  <h2>Where your home sits now</h2>
+  <p>Your competition remains 9305 Luminary Boulevard, four doors down — 3 bed, 3.5 bath, 2,004 square feet, built 2026, which was asking <b>$3,800</b> when we last reported.</p>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Property</th><th class="num">Beds</th><th class="num">Sq ft</th><th class="num">Asking</th><th class="num">Per sq ft</th></tr></thead>
+    <tbody>
+      <tr><td>9305 Luminary Blvd</td><td class="num">3 / 3.5</td><td class="num">2,004</td><td class="num">$3,800</td><td class="num">$1.90</td></tr>
+      <tr class="hi"><td>9313 Luminary Blvd — your home</td><td class="num">3 / 3.5</td><td class="num">2,037</td><td class="num">$2,995</td><td class="num">$1.47</td></tr>
+    </tbody>
+    <caption>Your home is larger and now asking $805 per month less — a 21% difference.</caption>
+  </table>
+  </div>
+  <p>At $3,150 your home was 17% below that listing. At $2,995 it is <b>21% below on a larger home</b>, and a renter comparing the two does not need to deliberate. That is the position we wanted you in, and the showing activity suggests it is landing.</p>
+  <p>Still no comparable home in this segment has leased in the MLS. Neither of you has a proven number yet — which is exactly why the response to the reduction is the most useful information available.</p>
+</section>
+
+<section>
+  <p class="snum">Section Five</p>
+  <h2>Running metrics</h2>
+  <div class="tscroll">
+  <table>
+    <thead><tr><th>Measure</th><th class="num">Report 1 (Sept 11)</th><th class="num">Report 2 (Sept 17)</th></tr></thead>
+    <tbody>
+      <tr><td>Days marketed</td><td class="num">11</td><td class="num">17</td></tr>
+      <tr><td>Asking rent</td><td class="num">$3,150</td><td class="num">$2,995</td></tr>
+      <tr><td>Inquiries received</td><td class="num">1</td><td class="num">2</td></tr>
+      <tr><td>Realtor inquiries</td><td class="num">0</td><td class="num">1</td></tr>
+      <tr><td>Showings scheduled</td><td class="num">0</td><td class="num">2</td></tr>
+      <tr><td>Showings completed</td><td class="num">0</td><td class="num">In progress</td></tr>
+      <tr><td>Applications received</td><td class="num">0</td><td class="num">0</td></tr>
+      <tr><td>Competing homes listed</td><td class="num">1</td><td class="num">1</td></tr>
+      <tr><td>Price per square foot</td><td class="num">$1.55</td><td class="num">$1.47</td></tr>
+      <tr><td>Comparable homes leased, this segment</td><td class="num">0</td><td class="num">0</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section>
+  <p class="snum">Section Six</p>
+  <h2>Our recommendation</h2>
+
+  <div class="box">
+    <h3>Hold at $2,995</h3>
+    <p>No change this week, and no decision needed from you.</p>
+    <p>The purpose of these reports is to tell you whether the price and the marketing are producing interest, and to recommend an adjustment if they are not. This week the answer is that they are. Moving the number again now would be reacting to the wrong thing.</p>
+  </div>
+
+  <p>What we want to see over the next seven days is whether these showings convert — either into an application, or into feedback specific enough to act on. Two showings is movement. It is not yet a pool of qualified applicants to choose from, and we will keep working toward that.</p>
+  <p>We also want to set a fair expectation. A showing is not a lease, and either of these prospects may pass. If activity stops after this week, we will tell you plainly and bring you a recommendation. If it continues, we hold and let the price keep doing its work.</p>
+
+  <div class="pull">
+    <p>You made a decision quickly last week when we asked you to, and it worked. We would rather tell you that plainly than pretend the improvement came from anything we did on the marketing side.</p>
+  </div>
+
+  <p>Your next report arrives <b>next Friday morning</b>. In the meantime, Becky will keep you updated directly as each showing happens and as feedback comes in — you will not have to wait a week to hear how they went.</p>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="sig">Curating Lake Nona's Finest Rental Portfolio</div>
+    <p><b>Verandah Properties, LLC</b><br>
+    Pamela Syvertson, Owner &amp; Broker · License CQ1048619 · <a href="tel:4078550331">407-855-0331</a></p>
+    <p style="font-size:.84rem;color:#8C877F;max-width:74ch">Market data sourced from Stellar MLS as of September 17, 2026, and is deemed reliable but not guaranteed. Comparable analysis reflects three-bedroom new-construction townhomes in the Alora and Laureate Park communities and is an opinion of value, not an appraisal. Portal visibility verified manually on the date shown.</p>
+  </div>
+</footer>
+
+</body>
+</html>
